@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GitHub CMD Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">GitHub Guide</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#basics">GitHub Basics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#react">React Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#anyproject">Any Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collaboration">Collaboration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cheats">Git Cheats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#common-issues">Common Issues</a>
+                </li>
+            </ul>   
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="header-section text-center">
+        <div class="container">
+            <h1 class="title">Simple GitHub CMD Guide</h1>
+            <p class="subtitle">Learn GitHub step-by-step through essential commands, explained in a simple and beginner-friendly manner.</p>
+        </div>
+    </header>
+
+    <!-- GitHub Basics Section -->
+    <section id="basics" class="section">
+        <div class="container">
+            <h2 class="section-title">Git and GitHub Basics</h2>
+            <p>Before diving into commands, let's understand some basic concepts about Git and GitHub.</p>
+            
+            <h3>What is Git?</h3>
+            <p>Git is a version control system that tracks changes to files and allows multiple people to work on the same project without conflicting with each other. It helps developers manage their code effectively.</p>
+            
+            <h3>What is GitHub?</h3>
+            <p>GitHub is a platform for hosting and managing Git repositories. It allows developers to collaborate on projects by providing features like <strong>pull requests</strong>, <strong>issues</strong>, and <strong>actions</strong>.</p>
+
+            <h3>Why Use GitHub?</h3>
+            <p>GitHub is widely used for both open-source and private projects. You can work on personal projects or collaborate with other developers worldwide.</p>
+        </div>
+    </section>
+
+    <!-- React Project Section -->
+    <section id="react" class="section">
+        <div class="container">
+            <h2 class="section-title">How to Upload a React Project to GitHub</h2>
+            <p>Here's how to upload a React project to GitHub in simple steps:</p>
+            
+            <!-- Steps with coding prompt style -->
+            <div class="steps">
+                <p><strong>1. Open your terminal or command prompt:</strong></p>
+                <div class="command">Open Command Prompt/Terminal on your computer.</div>
+
+                <p><strong>2. Go to your project folder:</strong></p>
+                <div class="command">
+                    <code>cd path/to/your/react-project</code><br>
+                    <span class="explanation">This command moves you inside your React project's folder. Replace <em>path/to/your/react-project</em> with the actual location.</span>
+                </div>
+
+                <p><strong>3. Initialize git (if not already done):</strong></p>
+                <div class="command">
+                    <code>git init</code><br>
+                    <span class="explanation">This command starts tracking your project using Git (Git is like the brain of your project).</span>
+                </div>
+
+                <p><strong>4. Add your project files to git:</strong></p>
+                <div class="command">
+                    <code>git add .</code><br>
+                    <span class="explanation">This tells Git to prepare all files for uploading.</span>
+                </div>
+
+                <p><strong>5. Save your changes:</strong></p>
+                <div class="command">
+                    <code>git commit -m "My first commit"</code><br>
+                    <span class="explanation">This step saves your progress with a message describing your changes (like writing in a diary).</span>
+                </div>
+
+                <p><strong>6. Link your local project to GitHub:</strong></p>
+                <div class="command">
+                    <code>git remote add origin https://github.com/yourusername/repository-name.git</code><br>
+                    <span class="explanation">Replace the URL with your GitHub repository link (you can get this after creating a repo on GitHub).</span>
+                </div>
+
+                <p><strong>7. Push (upload) the code to GitHub:</strong></p>
+                <div class="command">
+                    <code>git push -u origin main</code><br>
+                    <span class="explanation">Finally, this command uploads your project to GitHub.</span>
+                </div>
+            </div>
+
+            <!-- Example -->
+            <h3>Example:</h3>
+            <p>If your React project folder is on your desktop, here’s how you would upload it:</p>
+            <div class="command">
+                <code>cd Desktop/react-project</code><br>
+                <code>git init</code><br>
+                <code>git add .</code><br>
+                <code>git commit -m "Initial React project commit"</code><br>
+                <code>git remote add origin https://github.com/username/my-react-project.git</code><br>
+                <code>git push -u origin main</code>
+            </div>
+        </div>
+    </section>
+
+    <!-- Any Project Section -->
+    <section id="anyproject" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title">How to Upload Any Project to GitHub</h2>
+            <p>You can upload any kind of project to GitHub using similar steps. Here's the simplified version:</p>
+            <div class="steps">
+                <p><strong>1. Open terminal and go to your project folder:</strong></p>
+                <div class="command"><code>cd path/to/your/project-folder</code></div>
+
+                <p><strong>2. Initialize git:</strong></p>
+                <div class="command"><code>git init</code></div>
+
+                <p><strong>3. Add your files:</strong></p>
+                <div class="command"><code>git add .</code></div>
+
+                <p><strong>4. Commit your changes:</strong></p>
+                <div class="command"><code>git commit -m "Added all files"</code></div>
+
+                <p><strong>5. Link your GitHub repo:</strong></p>
+                <div class="command"><code>git remote add origin https://github.com/username/project.git</code></div>
+
+                <p><strong>6. Push to GitHub:</strong></p>
+                <div class="command"><code>git push -u origin main</code></div>
+            </div>
+            
+            <h3>Example:</h3>
+            <p>If your project folder is on your D: drive:</p>
+            <div class="command">
+                <code>cd D:/projects/my-awesome-project</code><br>
+                <code>git init</code><br>
+                <code>git add .</code><br>
+                <code>git commit -m "Initial commit"</code><br>
+                <code>git remote add origin https://github.com/username/awesome-project.git</code><br>
+                <code>git push -u origin main</code>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Collaboration Section -->
+    <section id="collaboration" class="section">
+        <div class="container">
+            <h2 class="section-title">Collaborating on GitHub</h2>
+            <p>GitHub makes it easy to work with others. Here’s how you can collaborate on a project with GitHub.</p>
+
+            <h3>Forking a Repository</h3>
+            <p>Forking a repository means copying someone else's project to your GitHub account so you can work on it. You can then submit a pull request to merge your changes back into the original project.</p>
+            <div class="command">
+                <code>git clone https://github.com/username/repository-name.git</code><br>
+                <span class="explanation">This command copies the repository from GitHub to your local machine.</span>
+            </div>
+
+            <h3>Creating and Switching Branches</h3>
+            <p>When collaborating, it's good practice to create a new branch for each feature or bug fix.</p>
+            <div class="command">
+                <code>git checkout -b new-feature-branch</code><br>
+                <span class="explanation">This command creates and switches to a new branch named <em>new-feature-branch</em>.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Git Cheats Section -->
+    <section id="cheats" class="section">
+        <div class="container">
+            <h2 class="section-title">Common Git Commands Cheats</h2>
+            <ul class="section-content">
+                <li><strong>Check the status:</strong> <code>git status</code> - See what changes have been made in your project.</li>
+                <li><strong>View commit history:</strong> <code>git log</code> - View all saved changes.</li>
+                <li><strong>Switch branches:</strong> <code>git checkout branch-name</code> - Move to another version of your project.</li>
+                <li><strong>Pull updates:</strong> <code>git pull</code> - Download the latest changes from GitHub.</li>
+                <li><strong>Clone a repo:</strong> <code>git clone https://github.com/username/repo-name.git</code> - Copy an entire project from GitHub to your computer.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Common Git Issues Section -->
+    <section id="common-issues" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title">Common Git Issues and How to Fix Them</h2>
+            <p>Sometimes, you might run into problems while using Git. Here are some common issues and how to fix them.</p>
+            
+            <h3>1. Git Push Rejected</h3>
+            <p>This error occurs when the branch you're trying to push is behind the branch on GitHub.</p>
+            <div class="command">Error: Updates were rejected because the remote contains work that you do not have locally.</div>
+            <p><strong>Fix:</strong> You need to pull the changes from the remote branch first:</p>
+            <div class="command" style="margin-bottom: 20px;"><code>git pull origin main</code></div>
+
+            <h3>2. Permission Denied (SSH)</h3>
+            <p>This error occurs when your SSH keys are not set up correctly for GitHub.</p>
+            <div class="command">Error: Permission denied (publickey).</div>
+            <p><strong>Fix:</strong> You need to set up your SSH keys:</p>
+            <div class="command"><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-white">
+        <div class="container">
+            <p>© 2024 Prathamesh V. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/prathameshvattamwar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prathamesh-vattamwar-483529227/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
