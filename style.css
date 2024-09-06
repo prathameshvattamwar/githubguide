@@ -6,13 +6,18 @@ body {
 }
 
 .navbar {
-    padding: 15px;
+    padding: 5px 15px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 .header-section {
-    padding: 80px 0;
+/*     padding: 80px 0; */
     background-color: #282828;
     color: white;
+    padding-top: 100px;
+    padding-bottom:50px;
 }
 
 .title {
