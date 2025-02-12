@@ -74,6 +74,12 @@ GitHub makes collaboration easy:
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
     ```
 
+##Project Preview
+<h3>Project Preview</h3>
+<img src="https://i.imgur.com/wD6b4eu.png" alt="_blank"/>
+<br>
+<img src="https://i.imgur.com/2xlG8BP.png" alt="_blank"/>
+
 ## Contributing
 Feel free to contribute to this guide by submitting a pull request or opening an issue. Fork the repo, make your changes, and submit a pull request for review.
 
